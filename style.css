@@ -1,0 +1,86 @@
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+
+.battleship-grid {
+    margin: 2vmin;
+    display: grid;
+    background-color: hsl(200, 14%, 42%);
+    grid-template-rows: repeat(10, 5vmin);
+    grid-template-columns: repeat(10, 5vmin);
+  }
+
+  .ship {
+    position: relative;
+    background-color: hsl(0, 0%, 80%);
+  }
+
+
+  .grid-display {
+    display: flex;
+  }
+  
+  .ship > div {
+    width: 4.6vmin;
+    height: 4.6vmin;
+  }
+  
+  .ship {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vmin;
+    width: calc(4.6vmin * var(--width, 1));
+    height: calc(4.6vmin * var(--height, 1));
+    border-radius: 2.3vmin;
+  }
+  
+  .battleship-grid div {
+    border: 1px solid hsla(0, 0%, 100%, .2);
+  }
+  
+  .destroyer-container {
+    --width: 2;
+  }
+  
+  .destroyer-container-vertical {
+    --height: 2;
+    --width: 1;
+  }
+  
+  .submarine-container,
+  .cruiser-container {
+    --width: 3;
+  }
+  
+  .submarine-container-vertical,
+  .cruiser-container-vertical {
+    --height: 3;
+    --width: 1;
+  }
+  
+  .battleship-container {
+    --width: 4;
+  }
+  
+  .battleship-container-vertical {
+    --height: 4;
+    --width: 1;
+  }
+  
+  .carrier-container {
+    --width: 5;
+  }
+  
+  .carrier-container-vertical {
+    --height: 5;
+    --width: 1;
+  }
+  
